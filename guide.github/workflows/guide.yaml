@@ -17,3 +17,7 @@ jobs:
 
       - name: Check Style
         run: pycodestyle -- learn.py
+				
+		  - name: Test with pytest  # This is new!
+				run: |
+					 python3 -m unittest learn.py
